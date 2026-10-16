@@ -1,0 +1,55 @@
+PASS typing reaches core without processing
+PASS clear editor project
+PASS clear editor number
+PASS clear editor subitem
+PASS clear editor type
+PASS clear editor owner
+PASS clear editor revision
+PASS clear editor scale_unit
+PASS clear editor date
+PASS clear does not erase per-drawing data
+PASS clear preserves personnel
+PASS switch retains project
+PASS switch retains number
+PASS switch retains subitem
+PASS switch retains owner
+PASS switch retains revision
+PASS switch retains date
+PASS switch retains type
+PASS switch retains scale_unit
+PASS switch resets only the old scan table
+PASS fraction scale with unit preserved
+PASS fraction without unit survives refresh
+PASS clear stays empty after refresh project
+PASS clear stays empty after refresh number
+PASS clear stays empty after refresh subitem
+PASS clear stays empty after refresh type
+PASS clear stays empty after refresh owner
+PASS clear stays empty after refresh revision
+PASS clear stays empty after refresh scale_unit
+PASS clear stays empty after refresh date
+PASS ten personnel editors are available
+PASS switch retains personnel N设计总负责人_T5_H3
+PASS switch retains personnel N执行设总_T5_H3
+PASS switch retains personnel N执行设总二_T5_H3
+PASS switch retains personnel N专业负责人_T5_H3
+PASS switch retains personnel N专业负责人（副）_T5_H3
+PASS switch retains personnel N专业负责人（副）二_T5_H3
+PASS switch retains personnel N设计_T5_H3
+PASS switch retains personnel N校对_T5_H3
+PASS switch retains personnel N审核_T5_H3
+PASS switch retains personnel N审定_T5_H3
+PASS clear personnel N设计总负责人_T5_H3
+PASS clear personnel N执行设总_T5_H3
+PASS clear personnel N执行设总二_T5_H3
+PASS clear personnel N专业负责人_T5_H3
+PASS clear personnel N专业负责人（副）_T5_H3
+PASS clear personnel N专业负责人（副）二_T5_H3
+PASS clear personnel N设计_T5_H3
+PASS clear personnel N校对_T5_H3
+PASS clear personnel N审核_T5_H3
+PASS clear personnel N审定_T5_H3
+PASS personnel clear preserves global information
+PASS personnel clear preserves per-drawing names
+PASS personnel clear preserves signature selection
+ALL CHECKS PASSED; no CAD processing or drawing writes were performed.

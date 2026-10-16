@@ -1,0 +1,65 @@
+;; Load replace_frames.lsp first. Run CFRTITLEIMPORTTEST in a blank drawing.
+;; Synthetic collision demonstration; it does not reproduce a supplied DWG.
+(defun cfri:check (label ok)
+  (if ok (setq cfri:passed (1+ cfri:passed)) (setq cfri:failed (1+ cfri:failed)))
+  (princ (strcat "\n" (if ok "PASS " "FAIL ") label))
+)
+
+(defun c:CFRTITLEIMPORTTEST
+  (/ *error* library oldtext snapshot oldref first second third first-name
+     saved undo-open key setting)
+  (defun *error* (message)
+    (foreach setting saved (setvar (car setting) (cdr setting)))
+    (if undo-open (command-s "_.UNDO" "_End"))
+    (princ (strcat "\nTest stopped: " message))
+    (princ)
+  )
+  (cond
+    ((not (member "FRA:FRESH-TITLE-SOURCE" (atoms-family 1)))
+      (princ "\nLoad the v3 replace_frames.lsp first."))
+    ((or (tblobjname "BLOCK" "NEW_TITLE") (ssget "_X" '((410 . "Model"))))
+      (princ "\nUse a NEW blank drawing. This demonstration adds test geometry."))
+    ((setq library (getfiled "Select engine/assets/NEW_TITLE.dwg" "" "dwg" 0))
+      (setq saved (mapcar '(lambda (key) (cons key (getvar key)))
+        '("ATTDIA" "ATTREQ" "OSMODE" "INSUNITS" "AUNITS" "ANGBASE" "ANGDIR" "CTAB")))
+      (setvar "CTAB" "Model")
+      (foreach key '("ATTDIA" "ATTREQ" "OSMODE" "INSUNITS" "AUNITS" "ANGDIR")
+        (setvar key 0))
+      (setvar "ANGBASE" 0.0)
+      (command "_.UNDO" "_Begin")
+      (setq undo-open T cfri:passed 0 cfri:failed 0)
+      ;; An obsolete same-name definition with deliberately wrong geometry.
+      (entmake '((0 . "BLOCK") (2 . "NEW_TITLE") (70 . 0) (10 0.0 0.0 0.0)))
+      (entmake '((0 . "TEXT") (10 15.0 80.0 0.0) (40 . 4.0)
+        (1 . "OLD BLOCK / OFFSET TEXT") (7 . "Standard")))
+      (entmake '((0 . "ENDBLK")))
+      (setq oldtext (entnext (tblobjname "BLOCK" "NEW_TITLE")))
+      (setq snapshot (entget oldtext) fra:title-import-cache '())
+      (setq oldref (fra:insert "" "NEW_TITLE" '(0.0 0.0 0.0) 1.0 1.0 0.0))
+      (setq first (fra:insert library "NEW_TITLE" '(140.0 0.0 0.0) 1.0 1.0 0.0))
+      (setq second (fra:insert library "NEW_TITLE" '(280.0 0.0 0.0) 1.0 1.0 0.0))
+      (cfri:check "existing old reference retained" (and oldref (entget oldref)))
+      (cfri:check "existing definition unchanged" (equal snapshot (entget oldtext)))
+      (cfri:check "current external template imported" (and first
+        (/= (fra:get 2 (entget first)) "NEW_TITLE")
+        (fra:assistant-title-p (fra:get 2 (entget first)))))
+      (setq first-name (if first (fra:get 2 (entget first))))
+      (cfri:check "same-run imports share fresh definition" (and first second
+        (= first-name (fra:get 2 (entget second)))))
+      ;; Simulate the next processing run in the same document.
+      (setq fra:title-import-cache '())
+      (setq third (fra:insert library "NEW_TITLE" '(420.0 0.0 0.0) 1.0 1.0 0.0))
+      (cfri:check "next run imports another current definition" (and first third
+        (/= first-name (fra:get 2 (entget third)))))
+      (cfri:check "old definition still unchanged" (equal snapshot (entget oldtext)))
+      (command "_.ZOOM" "_Extents")
+      (command "_.UNDO" "_End")
+      (setq undo-open nil)
+      (foreach setting saved (setvar (car setting) (cdr setting)))
+      (princ (strcat "\nResults: " (itoa cfri:passed) " passed; "
+        (itoa cfri:failed) " failed. Left: obsolete block; right: current template."))
+      (princ "\nUndo once to remove the demonstration geometry.")
+    )
+  )
+  (princ)
+)

@@ -1,0 +1,11 @@
+PASS original point, scales and rotation preserved 150.00001811/150.00001811
+PASS original point, scales and rotation preserved 49.99995061/49.99995061
+PASS original point, scales and rotation preserved -2.25/3.125
+PASS native INSERT defaults do not inherit frame scale
+PASS missing native title keeps explicit existing fallback
+PASS different next sheet has independent values
+PASS new title insert consumes original title transform
+PASS frame insert retains original frame transform
+PASS native title does not consume frame X scale
+PASS new signatures use title transform
+ALL 10 TITLE TRANSFORM CHECKS PASSED; data and source call checks only, no native CAD writes.

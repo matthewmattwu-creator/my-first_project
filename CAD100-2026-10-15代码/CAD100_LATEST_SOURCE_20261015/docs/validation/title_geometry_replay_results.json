@@ -1,0 +1,37 @@
+{
+  "dataReplay": "PASS",
+  "testedAttributes": 76,
+  "comparisons": [
+    {
+      "case": "01",
+      "matchedAttributes": 14,
+      "currentHeightDifferences": 14,
+      "currentAlignmentDifferences": 7
+    },
+    {
+      "case": "02",
+      "matchedAttributes": 24,
+      "currentHeightDifferences": 12,
+      "currentAlignmentDifferences": 5
+    },
+    {
+      "case": "03",
+      "matchedAttributes": 4,
+      "currentHeightDifferences": 4,
+      "currentAlignmentDifferences": 2
+    },
+    {
+      "case": "04",
+      "matchedAttributes": 30,
+      "currentHeightDifferences": 19,
+      "currentAlignmentDifferences": 0
+    },
+    {
+      "case": "05",
+      "matchedAttributes": 4,
+      "currentHeightDifferences": 0,
+      "currentAlignmentDifferences": 0
+    }
+  ],
+  "limitation": "Production pure DXF helpers executed; native AutoCAD save/reopen and visual checks still required."
+}

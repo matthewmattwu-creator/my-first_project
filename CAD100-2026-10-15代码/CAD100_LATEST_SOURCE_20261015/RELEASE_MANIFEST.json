@@ -1,0 +1,444 @@
+{
+  "release": "CAD100_LATEST_SOURCE_20261015",
+  "date": "2026-10-15",
+  "basis": "Original title transform preservation source from CAD100%_测试包.zip",
+  "behavior": [
+    "Preserve original title insertion point, X/Y scale and rotation",
+    "Preserve source title-name and drawing-number attribute geometry",
+    "Keep precise internal scale values; no verification tolerance relaxation"
+  ],
+  "validation": {
+    "titleTransformChecks": 10,
+    "titleTransformResult": "PASS",
+    "powerShellSyntax": "PASS",
+    "nativeCad": "Not executed for this source repackaging"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "7c1a2ba95a49ffc664ef1dc833a1d692d565ba03",
+      "sha256": "FF8574039B03DFCBE79417A721ED7E849AAADA9851E3945799A7EB2DF0641A04",
+      "size": 532
+    },
+    {
+      "path": "build.ps1",
+      "sha": "4696926c7a00a784cf3be6cb07be4339df4cf4ad",
+      "sha256": "35C8D918B462888E17BE6D7DEAC25D6104DCCC767BC45EAC1374DE6611A3275E",
+      "size": 7582
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha": "666e9b379ab2cffe5b6b9f209f7b306c0ff7a105",
+      "sha256": "D424F55DF9F2842BACBC1304D2D6D89628E260BF2B0A82820E3A812AFFF92E76",
+      "size": 1049
+    },
+    {
+      "path": "README.md",
+      "sha": "5d45e2fd702dceb9064a2f74c50d080a25e10960",
+      "sha256": "80D287C48FCAF970C9E144D36AF5807985E0730C716A1160564B2DE160476BA1",
+      "size": 3764
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha": "52d6f94abaf4fbad8481827abb86eba0c625cdb0",
+      "sha256": "046450154433A8A774DA55BFCE89A5AE0606AA504FF3E7CF777E5C2BD79B328D",
+      "size": 322
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "sha": "49e4b05fd82abf4d58cda46f487184fe5b9f7cdc",
+      "sha256": "FD4BBD490C3A2CCB42834B0EA0B0F7BE2D30A931657AD24CDCDF4B8C791F0D44",
+      "size": 914
+    },
+    {
+      "path": ".github/workflows/license-build-smoke.yml",
+      "sha": "97b99c3a6cb504324c16fb5a644dc06ba53369af",
+      "sha256": "A36E4CB22D6007735AA59A3E523B26D54E4C17CE988E57EACF985AFDA7FAEE76",
+      "size": 2149
+    },
+    {
+      "path": "docs/开发与调试说明.md",
+      "sha": "2251a519516f67c15429004e00cc35d11eb3aa64",
+      "sha256": "34AB2822AD6017BEC9BB4CA1E749DBF9658155EA9F860E5925D69C1130E30663",
+      "size": 1857
+    },
+    {
+      "path": "docs/使用指南.txt",
+      "sha": "d840197181fdccc2b895678715c9c0b635c9c5cc",
+      "sha256": "0473966CB154DBB63B38A0A28473D99B8C35DA983981D40046E06D0AD257EBA3",
+      "size": 3705
+    },
+    {
+      "path": "docs/LICENSE_SYSTEM_V2.md",
+      "sha": "a1b420b971e86047c76cc51c5ee1536d02de1dc5",
+      "sha256": "ABED86004AFF060EC8A7148AF8AC61DF2E0FB28F15232C74FD5FAC18E896C1CE",
+      "size": 3841
+    },
+    {
+      "path": "docs/ORIGINAL_TITLE_TRANSFORM_TRIAL_20261014.md",
+      "sha": "c0e568ee45082220ed0fe9e5a52c16320948fdb6",
+      "sha256": "4580FC66AE1F7D318B4D7583FF126C64812820780185CE1C17699CF4281DDB3D",
+      "size": 2383
+    },
+    {
+      "path": "docs/PLAIN_FAILURE_MESSAGES_20261014.md",
+      "sha": "cd03afc2c8112d701c719a7e7e2be3b652020e44",
+      "sha256": "FF71B3723B1B1E640E639870890C9833BC4A75BB45AC08B1213C44BBC801EB7E",
+      "size": 1617
+    },
+    {
+      "path": "docs/SOURCE_ARCHITECTURE_20261015.md",
+      "sha": "00eaa1f7f5479f2cce33e74ff9ee870d9589ab09",
+      "sha256": "56C5C70412229EF53134BEF09631778862372C58F6830C41BAEA907B11BC10DE",
+      "size": 22143
+    },
+    {
+      "path": "docs/TRIAL_20261013.md",
+      "sha": "bbb2c949ecff5e02b95ec7b9b299f139ed5fbaeb",
+      "sha256": "2BB609E030CD5423A0B0A24C2BE9960D6B5327C8E7C08A1CBE71FEB064B38D6E",
+      "size": 2558
+    },
+    {
+      "path": "docs/TRIAL_PRESERVE_GEOMETRY_20261014.md",
+      "sha": "e51c506abd41411eeb01d0c0c327651b017a65df",
+      "sha256": "931F61ADA71201A48B38C5AF64E7570EBC9A20D232519117024EB9824679D03D",
+      "size": 2827
+    },
+    {
+      "path": "docs/TRIAL_RESULT_DETAILS_20261013.md",
+      "sha": "8248f3f3bc9944dccc8dab06cd15e4920b7c06b6",
+      "sha256": "895FE931388C4350FC6AE6FFE5E23C967A6322449F41DF0B36DFA3509D932E39",
+      "size": 2132
+    },
+    {
+      "path": "docs/validation/global_info_regression_results.txt",
+      "sha": "2091a372d2fe9a00f0a8d71402f49498341eca3d",
+      "sha256": "4257BB8EF14AA92CB126E2C41B93A668FD290B9E615EEC4E0678DA223C6EADAD",
+      "size": 2279
+    },
+    {
+      "path": "docs/validation/title_geometry_replay_results.json",
+      "sha": "73f8a94889761f828e465b0bdff79acc4e7c8205",
+      "sha256": "69A85CFEF804CFCCCA5A2E3C9EF710C93D2FEF82EDE07242378EC72783894C73",
+      "size": 932
+    },
+    {
+      "path": "docs/validation/title_transform_regression_results.txt",
+      "sha": "5b8a117a7cd00fcbe9533100144f3c7aa5695676",
+      "sha256": "C150A3B2F5BE2E616E534EE84A29B880993D40ECED7FB6A2B580A67760FF2FBA",
+      "size": 679
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A0.dwg",
+      "sha": "27708a5e359617eb8c2e08fae62af8fc996f54f1",
+      "sha256": "026868A020D737D22DE089507B22A8FC8164EC25E0D4A4B36DF696884A0C76B0",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A0P0125.dwg",
+      "sha": "d0f085b46bd8c358f84043d7afc1f8298554a9b6",
+      "sha256": "7A5F30B302B4AB5DB23E489CFB11AC5722ED268B1A3FAB6516EADEEAC68D561B",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A0P025.dwg",
+      "sha": "13c62edda2a94e31d3a65e7c0ee019a13e1e7072",
+      "sha256": "D7F1DF6076EF15D28E07DFDCEE796889C5BFA10B3115D37828E0D48D895B5C5E",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A0P0375.dwg",
+      "sha": "41727d1a3a121f67038c5432ac065238fb8ee523",
+      "sha256": "0848FC7578D267223DD4BDE98B15730EDC86625171E690985EA194078A4DE2AF",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A0P05.dwg",
+      "sha": "1506cd50e0b620693c7dbc343815bf300a57047e",
+      "sha256": "04C5F3E7C966546DDAAD5810CE9A165ADDF49844D45F013B8BCB65958F4FAB70",
+      "size": 246910
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A1.dwg",
+      "sha": "25208a29d6bec76b7d9df1381e709a5c63a73e42",
+      "sha256": "0AD8373C1E6754FCD1D975E549D8597E1D5BE8A1F970949D3DA9D2754ACBB964",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A1P025.dwg",
+      "sha": "8e2a71860f12132f1d5321e37d9db3ed969971d6",
+      "sha256": "B6849CFDB4098648055A6D10CA6EC1E1062CFE0F681A422B78F6D0F9FF1DEBAE",
+      "size": 246814
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A1P075.dwg",
+      "sha": "b4aafc527649c59ab2e11776355937c84d641cfc",
+      "sha256": "1A75EFEB6C5F341D407C24D79B63E0E4C9100059BD3ADF171D1EAB49B4F4E909",
+      "size": 246974
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A1P1.dwg",
+      "sha": "69fbe0a90c1a41ae5b8dd662f73b86247afd84a9",
+      "sha256": "62A1B676FDB3E9FE23855E45E410483F94CF270D50F5AABCC1150AF1513BA3CF",
+      "size": 246846
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A2.dwg",
+      "sha": "c0c527e0c79b58c6d55cc819dce819c9b0d417c2",
+      "sha256": "33283B981B40CDA3A78958BE85F3A485B53864E8B50DB3F6F2CAE14D7CDA3594",
+      "size": 246883
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A2P025.dwg",
+      "sha": "6642386c350032aec5d7cb7089752e732472a18b",
+      "sha256": "92A46A899647D40F5C12AFF7AEFD440416A7BA70C2EEB0D630F3BF594E0E8ACC",
+      "size": 246910
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A2P05.dwg",
+      "sha": "951d0c26cc16d99ed5fe963d46bad26de0090416",
+      "sha256": "09DCAD3DA5C5AD5B4D2BD838DCCD1A2DFBF9126CCF5286F2C04EA0580158A2A2",
+      "size": 246878
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A2P075.dwg",
+      "sha": "f6fdd19024b47e68a1df2c5ae40bbdea7be9d6d5",
+      "sha256": "3081326792FA4E3248E87197A5D562D677B110663B0EBB343FCE16259C2583E8",
+      "size": 246910
+    },
+    {
+      "path": "engine/assets/NEW_FRAME_A2P1.dwg",
+      "sha": "bf7da18973f486529a3f540a8db135d0f882355c",
+      "sha256": "B75EC534B35B103E22037AD34B0DD0564720CD2C143A70177752B0010900C5FD",
+      "size": 246878
+    },
+    {
+      "path": "engine/assets/NEW_TITLE.dwg",
+      "sha": "9f80f9eb5a841d908914ee135d67319da9b877c7",
+      "sha256": "45CD1B52A8506EE1D4835D0B9A4BFCD6872FD245047A5525592EE9D34D20458F",
+      "size": 26123
+    },
+    {
+      "path": "engine/assets/SHA256SUMS.txt",
+      "sha": "d76d8c0c44197e8243e77052509cce8bb31a50b6",
+      "sha256": "F8BA4C869E5DEA536A103DFE9FD1352F1153F334CFDDFE5ED24FF37362734D2E",
+      "size": 1282
+    },
+    {
+      "path": "engine/scripts/analyze_inventory.ps1",
+      "sha": "80578cf9c25b56787964322d917f6743a4c17162",
+      "sha256": "4C2256576FCFCCED07E3F496EF227889BA22C5A7F98E75D1C5EED6645159A99C",
+      "size": 7296
+    },
+    {
+      "path": "engine/scripts/normalize_signature.lsp",
+      "sha": "1ee33e681300dfea541d621f15879318823d582d",
+      "sha256": "EC51D29EB16FBAA49A7286A53E8FB64BA47CEB1056DD7CABA055FA9FC3088092",
+      "size": 2090
+    },
+    {
+      "path": "engine/scripts/old_frame_scan.lsp",
+      "sha": "3db9aec7a8f9e884cf543100bd0c92dab9d8c8c3",
+      "sha256": "455D60D54CA4E01793E38B1BC5D124DD67E0274625486E236DEDCDB2501CD28B",
+      "size": 7943
+    },
+    {
+      "path": "engine/scripts/recover_proxy_title_fields.ps1",
+      "sha": "c09924932bfcce6bc31f45b3f6ba4e3f509d69d9",
+      "sha256": "0A48A32CE435258C62744EF0DC72755E6C2EE78E201F92F996651D53B5225916",
+      "size": 21007
+    },
+    {
+      "path": "engine/scripts/replace_frames.lsp",
+      "sha": "7fa113e3069ce4ccd7ff68098981534cff950db2",
+      "sha256": "FD2BFFDAE47D0B8C216EB051AB8E949F6706CD5C8AEC48559421472F56B8AA62",
+      "size": 134064
+    },
+    {
+      "path": "engine/scripts/replacement_worker.ps1",
+      "sha": "9f70dc4175f4908fd376155f84a5861f94070293",
+      "sha256": "F0F07C3F110A5A8331DA8C1246AD910E0D0B2DB5F14585A5E4B9D8DE691E68C8",
+      "size": 15313
+    },
+    {
+      "path": "engine/scripts/run_frame_replacement.ps1",
+      "sha": "aa3d1b1bb1006295bd80a6545f5199d5f2d043c1",
+      "sha256": "F2EB9615CFC9D427D0FE081412843454BD8B135A32EE3376A42146B5AA38834C",
+      "size": 34276
+    },
+    {
+      "path": "engine/scripts/scan_all_frames.ps1",
+      "sha": "a8f3ec5c0004fe5da034d48aa29ab28d625d72a0",
+      "sha256": "86658FA95C2ED6C879858962AC19DB33F178364EFAD6591E09F90205A063B175",
+      "size": 8467
+    },
+    {
+      "path": "engine/scripts/scan_worker.ps1",
+      "sha": "56a1883749d8aceaafb059104d44aebd970d436a",
+      "sha256": "8B50BB80E2626D3596DE5318392DFC3B2A70D0AF9F0D89B7705FA79A16AA24E4",
+      "size": 5080
+    },
+    {
+      "path": "engine/scripts/validate_inventory_coverage.ps1",
+      "sha": "e979d4d93a31b018c78fc45405f874ff0148e9df",
+      "sha256": "A87EA7BC6E932A6AB142A5FF58566BBC3A8EE7F0C4160B067929B0D31523356B",
+      "size": 2906
+    },
+    {
+      "path": "engine/scripts/verify_replacement.ps1",
+      "sha": "b9509369bbaabe6455c9e1229a995dd9ae2e4a29",
+      "sha256": "D0384A94C936C9A0363EDC0BA7FEFB8C35ED74F581B804D7C4162EB3563F287A",
+      "size": 28700
+    },
+    {
+      "path": "server/generate_keys.py",
+      "sha": "6812c34909c6164d57dfb0dd6efede21ad4f7c97",
+      "sha256": "E73F549F1FD9A46E66D86D5828B5E41ABB2B4F9E93DA1ACB17DEB50129026D49",
+      "size": 1399
+    },
+    {
+      "path": "server/license_server.py",
+      "sha": "e1f459e59a4950ce702adb7bcb0b10f6630b2d87",
+      "sha256": "4ADF7CD5FF31CF3C700625B127020C71FF358B31BD25324E81D923AD93360CC8",
+      "size": 14041
+    },
+    {
+      "path": "server/license_web_admin.py",
+      "sha": "d81c3b2c20ddc7b436243e998c808f022ed1084b",
+      "sha256": "65B7637F97D8F560CE0D066F07D3E53B47F6A7885E4D10431E40376784655C21",
+      "size": 21726
+    },
+    {
+      "path": "server/requirements.txt",
+      "sha": "2ad5bc796faa85bb612caa1cd6915ee9899d57f2",
+      "sha256": "ACAFB15BD30A060B26C621C38E73850D4D33E8A6CE29361208839CBB9DD6B907",
+      "size": 81
+    },
+    {
+      "path": "server/update_service.py",
+      "sha": "610c687211e7316c0ba92d00a9e620de57b68ffe",
+      "sha256": "8DD0F87105CB84017D05957AA7A30CC938118CF47235F3DA7D6D446EF75A6AE7",
+      "size": 3318
+    },
+    {
+      "path": "src/CAD100Updater/Program.cs",
+      "sha": "c57679c115379192c923ccb664c0ce5f68aed7fa",
+      "sha256": "66F08D4275D1F772116DF71DE2E75115109101538CDACB8012F0C6B9BD80E207",
+      "size": 6290
+    },
+    {
+      "path": "src/CadProcessingCore/app.manifest",
+      "sha": "0383712e4459695122da9f2f8d289249a75d6839",
+      "sha256": "055F06A86C94210DC53399509127476A8C80853F50F50005201924E8B27B1520",
+      "size": 824
+    },
+    {
+      "path": "src/CadProcessingCore/LicenseGuard.cs",
+      "sha": "f4a17d89b01decddd2dd1f7be044038fceee13a9",
+      "sha256": "BA5B75AC285E808716C8A9C5E15A8613D0F932F657A1E30073BA6EBAACF3B052",
+      "size": 22487
+    },
+    {
+      "path": "src/CadProcessingCore/Program.cs",
+      "sha": "21ab997d50c310999d1cb4031da89417d634483d",
+      "sha256": "E8659E71FD34870CAB437ADF746A52E6C204D871013AC24776A62ACD616B9452",
+      "size": 172445
+    },
+    {
+      "path": "src/Drawing100Wpf/App.config",
+      "sha": "d0122e4c893e7b4aa5c928dcb0bf88d71a838759",
+      "sha256": "E344E5B98FCFF54F791986740F5ABF28E5EC4087FD788730B06BD77E9D749ACD",
+      "size": 320
+    },
+    {
+      "path": "src/Drawing100Wpf/LicenseWindow.cs",
+      "sha": "f32ddfc9c26ee8974f23a916314e544cb0bb80af",
+      "sha256": "15E1F2E9C73E18EDF12A4BE520D24F0B5100208205B054C73863054CB1631B3C",
+      "size": 7714
+    },
+    {
+      "path": "src/Drawing100Wpf/Program.cs",
+      "sha": "ccdab6c7a4c1a5b906ae2b482535a165f4f47faa",
+      "sha256": "7B82ADCF2AE3C3AA385FEC41420A8B9D620C43EF6319BCCCFAE18FA2B414C823",
+      "size": 83866
+    },
+    {
+      "path": "src/Drawing100Wpf/UpdateManager.cs",
+      "sha": "a200a258c797f6c3acdef3ae32f3668b3e42d5c2",
+      "sha256": "8B0D12FB5290CD9AC5D50D8CD91BA6E1AC724DF23DE49047547B932F1C5ECCC1",
+      "size": 14234
+    },
+    {
+      "path": "templates/新图框.dwg",
+      "sha": "5ce0ce6b7b615d7bdc9b3eedf15468d688d34d61",
+      "sha256": "0BAB0AF00C3B72CF0EFB6F6B10213E63720681F2D0CEDAEABB1154F41F63146E",
+      "size": 331288
+    },
+    {
+      "path": "templates/NEW_TITLE_原始导出.dwg",
+      "sha": "f41fbbdfc58803708f77f7c12eac41a111e8ec66",
+      "sha256": "A72FF2BFD6D112C72096CA4E1BBC0B730CFB1CD10FD9D495A46559A4B9762CEB",
+      "size": 21895
+    },
+    {
+      "path": "tests/failure_reason_regression.ps1",
+      "sha": "2f7992817defeee67af5585864a3b36876cce4fa",
+      "sha256": "F9507D7326A9E7F9E40EE4A6AED880B7F11EF933CBB82E6939A88644CA1BBDAA",
+      "size": 2707
+    },
+    {
+      "path": "tests/global_info_regression.cs",
+      "sha": "40dad7a0c48b4d933c2f978787d41f93358abff8",
+      "sha256": "5A32DF916B04189E04532468D9BD0FB560843472EE3543741BDA510213FEFEA9",
+      "size": 6515
+    },
+    {
+      "path": "tests/plain_failure_regression.ps1",
+      "sha": "ef11ad59d85d665f82d02888ad641163337c1f16",
+      "sha256": "61F96F4FB8386AB04C979E2047A954DDAB1CB7318957642A255C26E03779D990",
+      "size": 5836
+    },
+    {
+      "path": "tests/run_global_info_regression.ps1",
+      "sha": "e06b2339c0b63ff438b8d0b1e53f47473b947e4c",
+      "sha256": "37EDF21B50317A58785A573B9A0812A7A0FE34B7243518AE06A9083EE6036DE2",
+      "size": 2259
+    },
+    {
+      "path": "tests/title_geometry_audit.lsp",
+      "sha": "ff2d36b59079e567af1ffa23ad90d2754eefd2d1",
+      "sha256": "7C4B2AB7EA02F379EAC4C7997183C1814804191BC9B18A43B77FD52184DC0529",
+      "size": 3903
+    },
+    {
+      "path": "tests/title_geometry_replay.mjs",
+      "sha": "7b953176c3171eb3fddb661dccb380c4ede55162",
+      "sha256": "B988BDB0D6945AC2AA378900BF1A613BCE6953CD7E903E17852E036F6D5EFD02",
+      "size": 9604
+    },
+    {
+      "path": "tests/title_import_regression.lsp",
+      "sha": "fba39aed6e006b55a532fe4cfc3d7e8f4291324f",
+      "sha256": "8D2325B1A8E19AFB818095E57875EFF2911AEF0C514B7E386E2F7FD21B9B0582",
+      "size": 3446
+    },
+    {
+      "path": "tests/title_scale_regression.lsp",
+      "sha": "37bd17a21b4835a7bae0a252304de874b1fb8d7b",
+      "sha256": "70A996F14EFD3A449961120ADA99414D516A814DA3F3DBD935805F7C9C71C458",
+      "size": 3241
+    },
+    {
+      "path": "tests/title_transform_regression.mjs",
+      "sha": "5caafb93939bb8d577b2cc7157bfce27d309c852",
+      "sha256": "C6F64E04A689306223D4C86FAF0C0AF4F6462AA580632E410FA8808DE325B629",
+      "size": 2274
+    },
+    {
+      "path": "tests/title_transform_verification_replay.ps1",
+      "sha": "dcc1c2716d00fbfd1ab44299e13b7de085bd0b02",
+      "sha256": "49FE4421B0414206118E049205922F67873A88327410F44B9FAE32BE4CC2C624",
+      "size": 3115
+    }
+  ]
+}
